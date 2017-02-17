@@ -1,0 +1,35 @@
+.galvanize_container {
+  background-image: url('img/hero.jpg');
+  background-size:cover;
+  height: 500px;
+}
+.scriptFont {
+  font-family: 'Pacifico', cursive;
+}
+h1 {
+  font-family: 'Special Elite', cursive;
+}
+h3 {
+  font-family: 'Special Elite', cursive;
+}
+#orderButton {
+  border-radius: 100px 100px 100px 100px;
+  background-color:#ffee58;
+  color: blue
+}
+#orderButton:hover {
+  background-color: black;
+  color:white;
+}
+.btn, .btn-large{
+  background-color:yellow;
+}
+.waves-effect.waves-brown .waves-ripple {
+     background-color: rgba(121, 85, 72, 0.65);
+}
+.card-image {
+  font-family: 'Special Elite', cursive;
+}
+#footer1 {
+  
+}
