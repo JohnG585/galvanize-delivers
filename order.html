@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css?family=Pacifico|Special+Elite" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pacifico|Pangolin|Special+Elite" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,9 +17,9 @@
 <body>
     <nav class="#fb8c00 orange darken-1" role="navigation">
         <div class="nav">
-            <div id="logo-container" href="#" class="brand-logo scriptFont"><span class="black-text">Galvanize</span> Delivers</div>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="index.html">Home</a></li>
+            <a id="logo-container" href="index.html" class="brand-logo scriptFont"><span class="black-text">Galvanize</span> Delivers</a>
+            <ul class="right hide-on-med-and-down scriptFont2">
+                <li><a href="order.html">Order Delivery</a></li>
             </ul>
         </div>
     </nav>
@@ -34,9 +34,9 @@
                                 <img src="img/burger.jpg">
                                 <a id="burgerButton" class="btn-floating halfway-fab waves-effect waves-light #e53935 red darken-1"><i class="material-icons">add</i></a>
                             </div>
-                            <span class="card-title location-top"><br>Royale with Cheese</span>
+                            <span class="card-title location-top scriptFont"><br>Royale with Cheese</span>
                             <div class="card-content">
-                                <p>$8.99</p>
+                                <p class="scriptFont1">$8.99</p>
                             </div>
                         </div>
                     </div>
@@ -46,9 +46,9 @@
                                 <img src="img/ice_cream.jpg">
                                 <a id="iceCreamButton" class="btn-floating halfway-fab waves-effect waves-light #e53935 red darken-1"><i class="material-icons">add</i></a>
                             </div>
-                            <span class="card-title location-top"><br>Ice Cream Biscuit</span>
+                            <span class="card-title location-top scriptFont"><br>Ice Cream Biscuit</span>
                             <div class="card-content">
-                                <p>$7.99</p>
+                                <p class="scriptFont1">$7.99</p>
                             </div>
                         </div>
                     </div>
@@ -59,9 +59,9 @@
                                     <img src="img/pizza.jpg">
                                     <a id="pizzaButton" class="btn-floating halfway-fab waves-effect waves-light #e53935 red darken-1"><i class="material-icons">add</i></a>
                                 </div>
-                                <span class="card-title location-top"><br>Arugula Pie</span>
+                                <span class="card-title location-top scriptFont"><br>Arugula Pie</span>
                                 <div class="card-content">
-                                    <p>$11.99</p>
+                                    <p class="scriptFont1">$11.99</p>
                                 </div>
                             </div>
                         </div>
@@ -71,9 +71,9 @@
                                     <img src="img/ribs.jpg">
                                     <a id="ribButton" class="btn-floating halfway-fab waves-effect waves-light #e53935 red darken-1"><i class="material-icons right-align">add</i></a>
                                 </div>
-                                <span class="card-title location-top"><br>Smoked Swine</span>
+                                <span class="card-title location-top scriptFont"><br>Smoked Swine</span>
                                 <div class="card-content">
-                                    <p>$14.99</p>
+                                    <p class="scriptFont1">$14.99</p>
                                 </div>
                             </div>
                         </div>
@@ -84,64 +84,35 @@
         <div class="col m5">
             <div class="container left">
                 <h3 class="header center">Order</h3>
-                <!-- <div class="row"> -->
-                <form class="wrapped-container">
-                    <!-- <table class="striped responsive-table"> -->
-                    <!-- <thead> -->
-                    <!-- <tr>
-                                    <th data-field="name">Item</th>
-                                    <th data-field="amount">Qty</th>
-                                    <th class="right" data-field="price">Price</th>
-                                </tr> -->
+                <div class="wrapped-container">
                     <ul class="wrapped-container">
-                        <div id="itemName" class="wrapped-container left">Item</div>
+                        <div id="itemName" class="wrapped-container left scriptFont1">Item</div>
                         <div class="row wrapped">
-                            <div id="itemPrice" class="wrapped-container right">Price</div>
+                            <div id="itemPrice" class="wrapped-container right scriptFont1">Price</div>
                     </ul>
 
-
-                    <!-- </thead> -->
-
-                    <!-- <tbody> -->
-                    <!-- <tr>
-                                    <td>Royale with Cheese</td>
-                                    <td class="center">1</td>
-                                    <td class="right">$8.99</td>
-                                </tr> -->
-
-                    <!-- <tr>
-                                    <td>Ice Cream Biscuit</td>
-                                    <td class="center">2</td>
-                                    <td class="right">$15.98</td>
-                                </tr>
-                                <tr>
-                                    <td>Arugula Pie</td>
-                                    <td class="center">1</td>
-                                    <td class="right">$11.99</td>
-                                </tr> -->
-                    <!-- </tbody> -->
-                    <!-- </table> -->
                     <br>
                     <br><br><br><br>
                     <div class="wrapped-container">
-                        <div class="subs">Subtotal:<span class="right" id="sub_numb"></span></div>
+                        <div class="subs scriptFont1">Subtotal:<span class="right" id="sub_numb"></span></div>
                         <br>
-                        <div class="tax">Tax:<span class="right" id="tax_numb"></span></div>
+                        <div class="tax scriptFont1">Tax:<span class="right" id="tax_numb"></span></div>
                         <br>
-                        <div class="total">Total:<span class="right" id="total_numb"></span></div>
+                        <div class="total scriptFont1">Total:<span class="right" id="total_numb"></span></div>
                     </div>
+                    <form id=form>
                     <div class="row">
                         <br>
                         <div class="input-field">
                             <i class="material-icons prefix">account_circle</i>
-                            <input id="icon_prefix" type="text" class="validate">
-                            <label for="icon_prefix">Name</label>
+                            <input id="name" min-length="3" type="text" class="validate" required="">
+                            <label for="icon_prefix" data-error="wrong" >Name</label>
                         </div>
                         <br><br>
                         <div class="input-field">
                             <i class="material-icons prefix">phone</i>
-                            <input id="icon_telephone" type="tel" class="validate">
-                            <label for="icon_telephone">Telephone</label>
+                            <input id="telephone" type="tel" class="validate" required="" aria-required="true">
+                            <label for="icon_telephone" data-error="wrong">Telephone</label>
                         </div>
                         <br><br>
                         <div class="row">
@@ -149,18 +120,19 @@
                                 <div class="row">
                                     <div class="input-field col s12">
                                       <i class="material-icons prefix">map</i>
-                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                        <textarea id="textarea1" class="materialize-textarea" required="" aria-required="true"></textarea>
                                         <label for="address">Address</label>
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <!-- </div> -->
                 </form>
                 </div>
+              </div>
                 <div class="col s12 m10 center">
-                    <button class="#fb8c00 orange darken-1 btn waves-effect waves-light black-text center" id ="submitButton" type="submit" name="action">Place Your Order
+                    <button class="#fb8c00 orange darken-1 btn waves-effect waves-light black-text center" id="submitButton"
+                     type="submit" name="action" value="submit">Place Your Order
                 <i class="material-icons">room_service</i>
                 </button>
                 </div>
@@ -170,14 +142,14 @@
             <div class="container" id="footer1">
                 <div class="row">
                     <div class="col l6 s12">
-                        <h5 class="white-text"><span class="black-text">Galvanize</span> Delivers</h5>
-                        <p class="white-text text-lighten-4">Fine Dining, <span class="black-text">Delivered.</p>
+                        <h5 class="white-text scriptFont"><span class="black-text">Galvanize</span> Delivers</h5>
+                        <p class="white-text text-lighten-4">Fine Dining, <span class="black-text scriptFont">Delivered.</p>
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <ul>
-                        <li><a class="grey-text text-lighten-3 right" href="index.html">Home</a></li>
+                        <li><a class="grey-text text-lighten-3 right scriptFont2" href="index.html">Home</a></li>
                         <br>
-                        <li><a class="grey-text text-lighten-3 right" href="index.html">Order Online</a></li>
+                        <li><a class="grey-text text-lighten-3 right scriptFont2" href="index.html">Order Online</a></li>
                     </ul>
                 </div>
             </div>

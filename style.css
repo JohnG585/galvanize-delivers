@@ -30,6 +30,12 @@ h3 {
 .card-image {
   font-family: 'Special Elite', cursive;
 }
-#footer1 {
-  
+#submitButton {
+  border-radius: 100px 100px 100px 100px
+}
+.scriptFont1{
+  font-family: 'Pangolin', cursive;
+}
+.scriptFont2 {
+  font-family: 'Special Elite', cursive;
 }
